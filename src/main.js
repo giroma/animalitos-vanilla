@@ -21,6 +21,10 @@ const createAnimalFigure = (animal) => {
   `
   figure.appendChild(caption)
 
+  figure.addEventListener('click', (event) => {
+    console.log(event);
+  })
+
   return figure;
 }
 
